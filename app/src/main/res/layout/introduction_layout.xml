@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/introlayout" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nes"
+        android:src="@drawable/nes"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="179dp"
+        android:text="红绯鱼"
+        android:id="@+id/author"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:textColor="#673ab7"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textIsSelectable="false" />
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<!--DrawerLayout旨在被用作使用match_parent为宽度和高度，以消耗可使用的全部空间的顶层内容图。-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/drawer_layout"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".Drawer">
+
+    <!-- As the main content view, the view below consumes the entire space available using match_parent in both dimensions. -->
+    <!-- 作为主要的内容视图，该视图下方消耗整个使用match_parent在两个方向的可用空间。-->
+    <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+    <!-- android:layout_gravity="start" tells DrawerLayout to treat this as a sliding drawer on the left side for left-to-right
+         languages and on the right side for right-to-left languages. If you're not building against API 17 or higher, use
+         android:layout_gravity="left" instead. -->
+    <!-- layout_gravity=“开始”告诉DrawerLayout将之视作在左侧的滑动抽屉左到右的语言和右侧从右到左的语言。
+         如果你还没有建立对API17或更高，采用Android：layout_gravity=“左”代替。-->
+    <!-- The drawer is given a fixed width in dp and extends the full height of   the container. -->
+    <!-- 抽屉中给出DP一个固定的宽度和延伸他容器的整个高度。-->
+    <fragment android:id="@+id/navigation_drawer"
+        android:layout_width="@dimen/navigation_drawer_width" android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:name="com.hongfeiyu.memory_hfy.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

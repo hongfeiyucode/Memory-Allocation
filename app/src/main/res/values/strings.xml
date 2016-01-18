@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">内存分配监测系统</string>
+
+    <string name="title_section1">内存分配监测系统</string>
+    <string name="title_section2">首次适应算法</string>
+    <string name="title_section3">下次适应算法</string>
+    <string name="title_section4">最佳适应算法</string>
+    <string name="title_section5">最坏适应算法</string>
+
+    <string name="navigation_drawer_open">打开navigation drawer</string>
+    <string name="navigation_drawer_close">关闭navigation drawer</string>
+
+    <string name="action_example">Xie</string>
+
+    <string name="action_settings">关于</string>
+</resources>

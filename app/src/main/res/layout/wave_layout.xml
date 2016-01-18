@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.hongfeiyu.memory_hfy.MySinkingView
+        android:id="@+id/sinking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@drawable/charming2" />
+
+    </com.hongfeiyu.memory_hfy.MySinkingView>
+
+
+
+    <ImageButton
+        android:id="@+id/btn_test"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/refresh1" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="72dp"
+        android:text="申请空间"
+        android:id="@+id/btn_sjfp"
+        android:layout_gravity="left|bottom"
+        android:singleLine="true"
+        android:textColor="#259b24"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="137dp"
+        android:layout_height="72dp"
+        android:text="随机释放"
+        android:id="@+id/btn_sjsf"
+        android:layout_gravity="right|bottom"
+        android:textColor="#e51c23"
+        android:textSize="20dp"
+        android:fontFamily="@string/navigation_drawer_close"
+        android:fontFeatureSettings="@string/navigation_drawer_close" />
+
+</FrameLayout>
